@@ -15,53 +15,58 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 16px;
 }
 
 .main {
   background: #f8f8f8;
   border-radius: 16px;
-  width: 624px;
-  margin: 16px;
+  max-width: 624px;
   padding: 32px;
+  flex-basis: 616px;
 }
 
 .person {
-    
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .person__description {
-    font-size: 16px;
-    line-height: 22px;
-    margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
 }
 
-.person__description--with-margin {
-    margin-bottom: 22px;
-}
-
-.person__info {
-    margin-bottom: 24px;
+.person__information {
+  flex-basis: 380px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .person__link {
-    color: #E20613;
-    text-decoration: none;
+  color: #e20613;
+  text-decoration: none;
 }
 
 .person__name {
   font-size: 36px;
+  font-weight: 400;
   margin: 0;
-  font-weight: normal;
 }
 
 .person__position {
-    font-size: 18px;
-    color: #545454;
-    margin: 0;
-    font-style: italic;
+  font-size: 18px;
+  color: #545454;
+  margin: 0;
+  font-style: italic;
 }
 
 .special {
-    color: #ED6D05;
-    font-weight: normal;
+  color: #ed6d05;
+  font-weight: normal;
 }
